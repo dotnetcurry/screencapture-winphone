@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="ScreenRecorder.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ScreenRecorder"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid><!--Tapped="Show_Circle"-->
+        <StackPanel  HorizontalAlignment="Stretch" Margin="24" >
+            <TextBlock Text="RTO - Vehicle Details"  Margin="0,0,0,24" VerticalAlignment="Center" FontSize="20" />
+            <TextBlock Text="Customer Name"  VerticalAlignment="Center" FontSize="20"/>
+            <TextBox Margin="0,0,0,12" />
+            <TextBlock Text="Registration Number"  VerticalAlignment="Center" FontSize="20"/>
+            <TextBox Margin="0,0,0,12" />
+            <TextBlock Text="Date of Purchase"  VerticalAlignment="Center" FontSize="20"/>
+            <DatePicker Margin="0,0,0,12" Orientation="Horizontal" />
+            <TextBlock Text="Vehicle Type"  VerticalAlignment="Center" FontSize="20"/>
+            <ToggleSwitch OffContent="Light Motor Vehicle" OnContent="Heavy Motor Vehicle" />
+            <TextBlock Text="Vehicle Number"  VerticalAlignment="Center" FontSize="20"/>
+            <TextBox Margin="0,0,0,12" />
+            <!--<MediaElement x:Name="OutPutScreen" VerticalAlignment="Bottom" HorizontalAlignment="Stretch" MaxHeight="280" Margin="24" />-->           
+        </StackPanel>
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarToggleButton x:Name="btnRecord" Icon="Play" Label="Capture" Click="btnRecord_Click"/>
+        </CommandBar>
+    </Page.BottomAppBar>
+</Page>
